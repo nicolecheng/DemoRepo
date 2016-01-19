@@ -20,29 +20,29 @@ void mouseClicked(){
   if(moveOn){
     s++;
   }
-  if(overHangman){
-    hangman = true;
-    environ = 2;
-    //overHangman = false;
-  }else if(overKittendrop){
-    kitten = true;
-    environ = 3; 
-    moveOn=true;
-    //overKittendrop=false;
-  }  
-  if (s==1){
+    if (s==1){
     s1Setup();
     scene1();
   }else if (s==4){
     environ = 1;
     desktopSetup();
+  }  
+  if(overHangman){
+    hangman = true;
+    environ = 2;
+    overHangman = false;
+  }else if(overKittendrop){
+    kitten = true;
+    environ = 3; 
+    moveOn=true;
+    overKittendrop=false;
   }else if(environ==2 && moveOn && hangman){
     hangmanSetup();
     moveOn = false;
-  }else if(environ==3 && !(kitten)){
-    environ=1;
-    desktopSetup();
-    s=4;
+  //}else if(environ==3 && !(kitten)){
+  //  environ=1;
+  //  desktopSetup();
+  //  s=4;
   }else if(environ==3 && moveOn && kitten){
     kittenSetup();
     moveOn = false;
