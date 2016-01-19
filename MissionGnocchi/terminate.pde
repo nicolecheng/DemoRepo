@@ -40,7 +40,7 @@
      text("click to continue...", 600, 590);
      s = 4;
      hangman = false;
-     moveOn=false;
+     //moveOn=false;
      //desktopSetup();
    }
  }
@@ -49,7 +49,10 @@
  void solved(){
    moveOn = true;
    finished = (correct[0] == 1);
-  for(int i = 0; i < correct.length; i++){
+  //for(int i = 0; i < correct.length; i++){
+    for(int i = 0; i < wordlist[wordSelect].length(); i++){
+    //print (correct[i]);
   finished = finished && (correct[i] == 1);  
   }
+  //print(finished);
  }

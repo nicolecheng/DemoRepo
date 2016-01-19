@@ -74,9 +74,12 @@ void hangmanDraw(){
       text("" + chances + "  Tries left",330,100);
       //Show letters guessed so far
       text(inputs, 400-3*inputs.length(), 180);
+      
       //since I cannot figure out the word lol
-      text(wordlist[wordSelect],50,50);
-  
+      //***************************************************
+      //text(wordlist[wordSelect],50,50);
+      //**************************************************
+      
      //tab 1 is the pop-up window background
    }else if (tab == 1){
       background(#AEF0EC);
