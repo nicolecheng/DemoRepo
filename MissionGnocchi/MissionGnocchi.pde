@@ -29,14 +29,10 @@ void mouseClicked(){
   }  
   if(overHangman){
     environ = 2;
-
-    overHangman = false;
   }else if(overKittendrop){
     environ = 3; 
     moveOn=true;
-    overKittendrop=false;
-  }else if(environ==2 && moveOn && hangman){
-  }  
+  } 
   if (s==1){
     s1Setup();
     scene1();
@@ -78,7 +74,7 @@ void draw(){
     scene2();
   }else if (s==3){
     scene3();
-  }else if (environ==1){
+  }else if (environ==1 || s == 4){
     desktopDraw();
   }else if(environ==2 && hangman){
     hangmanDraw();

@@ -11,11 +11,12 @@ void Congrats(){
     text("You saved enough kittens", 220, 270);
     text("to move onto the next stage.", 205, 320);
     text("Click here to continue.", 240, 370);
-    s=4;
-    print(s);
+    //s=4;
+    //print(s);
     //environ=1;
     //desktopSetup();
     s=8;
+    setup();
   }else{
     background(kbg);
   
