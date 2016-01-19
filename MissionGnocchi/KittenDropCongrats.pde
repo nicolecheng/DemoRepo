@@ -10,7 +10,7 @@ void Congrats(){
     text("CONGRATULATIONS!", 270, 220);
     text("You saved enough kittens", 220, 270);
     text("to move onto the next stage.", 205, 320);
-<<<<<<< HEAD
+
     text("Click here to continue.", 240, 370);
     //s=4;
     //print(s);
@@ -18,9 +18,7 @@ void Congrats(){
     //desktopSetup();
     s=8;
     setup();
-=======
     s=8;
->>>>>>> parent of ef83372... hangman working; kittendrop winning stage doesnt not work
   }else{
     background(kbg);
   
