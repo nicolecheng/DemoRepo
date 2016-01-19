@@ -28,16 +28,25 @@ void mouseClicked(){
     desktopSetup();
   }  
   if(overHangman){
-    hangman = true;
     environ = 2;
+
     overHangman = false;
   }else if(overKittendrop){
-    kitten = true;
     environ = 3; 
     moveOn=true;
     overKittendrop=false;
   }else if(environ==2 && moveOn && hangman){
+  }  
+  if (s==1){
+    s1Setup();
+    scene1();
+  }else if (s==4){
+    environ = 1;
+    desktopSetup();
+  }else if(environ==2 && moveOn){
+    //print("hangman setup stuff");
     hangmanSetup();
+    hangman = true;
     moveOn = false;
   //}else if(environ==3 && !(kitten)){
   //  environ=1;
@@ -46,6 +55,14 @@ void mouseClicked(){
   }else if(environ==3 && moveOn && kitten){
     kittenSetup();
     moveOn = false;
+  }else if(environ==3 && moveOn && !kitten){
+    kittenSetup();
+    kitten = true;
+    moveOn = false;
+  }else if(environ==3 && s==8){
+    environ=1;
+    desktopSetup();
+    s=4;
   }
   //if (gameClicks>=2){
   //  if(overHangman){
@@ -57,7 +74,6 @@ void mouseClicked(){
 }
 
 void draw(){
-  
   if (s==2){
     scene2();
   }else if (s==3){

@@ -55,13 +55,13 @@ void desktopDraw(){
 //  if( environ == 1){
   background(0);
   //First Folder
-  folders(30,30,"Folder Uno");
+  folders(30,30,"Hello World");
  
   //Second Folder
-  folders(30,150,"Folder Dos");
+  folders(30,150,"Hello World");
  
 //Third Folder
-  folders(30,270,"Folder Tres");
+  folders(30,270,"Hello World");
   
   //debugging use
   textSize(18);

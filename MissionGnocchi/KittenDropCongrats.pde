@@ -15,6 +15,7 @@ void Congrats(){
     print(s);
     //environ=1;
     //desktopSetup();
+    s=8;
   }else{
     background(kbg);
   
