@@ -14,11 +14,11 @@ void Congrats(){
     text("Click here to continue.", 240, 370);
     //s=4;
     //print(s);
-    //environ=1;
+    environ=1;
     //desktopSetup();
-    s=8;
-    setup();
-    s=8;
+    //s=8;
+    //setup();
+    //s=8;
   }else{
     background(kbg);
   
