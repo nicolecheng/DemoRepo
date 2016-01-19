@@ -32,7 +32,11 @@ void mouseClicked(){
   }else if(overKittendrop){
     environ = 3; 
     moveOn=true;
+<<<<<<< HEAD
   } 
+=======
+  }  
+>>>>>>> parent of ef83372... hangman working; kittendrop winning stage doesnt not work
   if (s==1){
     s1Setup();
     scene1();
@@ -44,6 +48,7 @@ void mouseClicked(){
     hangmanSetup();
     hangman = true;
     moveOn = false;
+<<<<<<< HEAD
   //}else if(environ==3 && !(kitten)){
   //  environ=1;
   //  desktopSetup();
@@ -51,6 +56,8 @@ void mouseClicked(){
   }else if(environ==3 && moveOn && kitten){
     kittenSetup();
     moveOn = false;
+=======
+>>>>>>> parent of ef83372... hangman working; kittendrop winning stage doesnt not work
   }else if(environ==3 && moveOn && !kitten){
     kittenSetup();
     kitten = true;
